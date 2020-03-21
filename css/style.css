@@ -1,5 +1,47 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
 
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+* {
+	margin: 0px; 
+	padding: 0px; 
+	
+}
+
+body {
+	height: 100%;
+  font-family: Poppins-Regular, sans-serif;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.title{
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 30px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 2em;
+}
 .login-page {
   width: 360px;
   padding:150px;
@@ -31,7 +73,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #df8b3a;
+  background: #484cf2;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -90,28 +132,4 @@
 }
 .container .info span .fa {
   color: #EF3B3A;
-}
-body {
-  background: linear-gradient(270deg, #484cf2, #df8b3a);
-  
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
-  background-size: 600% 400%;
-  
-  @-webkit-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  }
-  @-moz-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  }
-  @keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  }
 }
