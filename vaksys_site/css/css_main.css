@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding:0;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 400%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+h1{
+    text-align:center;
+    font-family:Optima;
+    padding:0.2em;
+    font-size:40px;
+    color:white;
+
+}
+.content{
+    background-color:transparent;
+    margin:2em;
+    padding:2em;
+    color:white;
+    font-family: 'Caveat', cursive;
+    font-size:30px;
+    font-weight: lighter;
+    text-align: center;
+}
+/*-----------------------
+      pil nav
+------------------*/
+.pill-nav{
+    text-align: right;
+    padding: 1em;
+    font-family: optima;
+
+}
+.pill-nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding:5px 10px 5px 10px;
+    margin:0.5em;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+    border:1px solid white;
+}
+
+.pill-nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.pill-nav a.active {
+    background-color: white;
+    color: black;
+}
+/*---------------------*/
+.content p{
+    text-align: center;
+
+}
+.content img{
+    max-width: 80px; 
+    border-radius:50px;
+}
+@media screen and (max-width: 600px) {
+    .pill-nav{
+        text-align: center;
+    }
+    .pill-nav a{
+        margin:0
+    }
+    
+    .content{
+        margin:0em;
+        padding:0.2em;
+    }  
+    .content p{
+            padding-top:3em; 
+    }
+}
